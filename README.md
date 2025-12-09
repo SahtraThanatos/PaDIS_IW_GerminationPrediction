@@ -13,21 +13,28 @@
 GerminationPrediction/
 │
 ├── data/ # Тестові зображення
-│ └── test_images/
+│ └── test_images/ # приклади фото для inference
 │
-├── gifs/ # Проєктні GIF з оригінального репозиторію
+├── gifs/ # GIF-зразки (від оригінального репо)
 │
-├── pretrained_models/ # Папка для навченої моделі (використовується окрема модель)
+├── pretrained_models/ # Папка для навченої моделі (якщо зберігати в репо)
 │
 ├── scripts/ # Оригінальні Python-скрипти авторів
+│ ├── export_inference_graph.py
+│ ├── gen_records.py
+│ ├── predict_record.py
+│ ├── predict_image.py
+│ ├── predict_testset.py
+│ ├── slice_rawimages.py
+│ ├── train_model.py
+│ └── gp_utils/
+│ └── germ_pred_util.py
 │
-├── workspace/ # Робоча директорія авторів
+├── workspace/ # Робочі директорії/результати (оригінальна структура)
 │
 ├── predict_tf2.py # Новий скрипт для запуску моделі в TensorFlow 2.x
 │
-└── README.md # Опис проєкту
-
-
+└── README.md # Опис
 
 ---
 
